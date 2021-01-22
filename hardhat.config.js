@@ -1,5 +1,6 @@
 require('@nomiclabs/hardhat-waffle');
 require('@eth-optimism/hardhat-state-dumps/build/src/plugin');
+require("@nomiclabs/hardhat-etherscan");
 
 const hdnode = require('@ethersproject/hdnode');
 
