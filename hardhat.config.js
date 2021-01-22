@@ -20,6 +20,6 @@ module.exports = {
       }
     }
   },
-  dump: './enqueues.json'
+  dump: process.env.INITIAL_STATE_PATH
 };
 

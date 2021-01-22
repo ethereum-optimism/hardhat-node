@@ -52,10 +52,10 @@
     ethers "5.0.0"
     ganache-core "^2.12.1"
 
-"@eth-optimism/hardhat-state-dumps@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@eth-optimism/hardhat-state-dumps/-/hardhat-state-dumps-0.0.4.tgz#a5fb63457dbf9b0fbfef24c1a61172a07bd5044f"
-  integrity sha512-OauVAlH626/V9PgIYhMVLbRr1yueWe9Zl2jJak6S2N4zlXkEOBZiY0ueBDi9qCnxwA+9BwLV8Vxn4Z4mF+cLmQ==
+"@eth-optimism/hardhat-state-dumps@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@eth-optimism/hardhat-state-dumps/-/hardhat-state-dumps-0.0.5.tgz#6b66696764443efa2d3251b6c079de3cb7c4dc23"
+  integrity sha512-JjpgZseLh6uapuYJMeBMZviEm3Xv5E0VXCgqjdF5/3cXzGJHF2peMD/Za54C2XgZQMDK3v7RBGbEf3UpsUHxiQ==
   dependencies:
     "@eth-optimism/contracts" "^0.1.4"
     "@ethersproject/hdnode" "^5.0.8"
