@@ -1,4 +1,6 @@
-require("@nomiclabs/hardhat-waffle");
+require('@nomiclabs/hardhat-waffle');
+require('@eth-optimism/hardhat-state-dumps/build/src/plugin');
+
 const hdnode = require('@ethersproject/hdnode');
 
 let mnemonic = process.env.MNEMONIC;
@@ -17,5 +19,7 @@ module.exports = {
         gasLimit: 0x1fffffffffffff,
       }
     }
-  }
+  },
+  dump: process.env.INITIAL_STATE_PATH
 };
+
