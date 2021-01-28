@@ -21,6 +21,7 @@ module.exports = {
       }
     }
   },
+  analytics: { enabled: false },
   dump: process.env.INITIAL_STATE_PATH
 };
 
