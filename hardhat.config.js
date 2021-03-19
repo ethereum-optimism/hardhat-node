@@ -1,7 +1,4 @@
-require('@nomiclabs/hardhat-waffle');
-require('@eth-optimism/hardhat-state-dumps/build/src/plugin');
 require("@nomiclabs/hardhat-etherscan");
-
 const hdnode = require('@ethersproject/hdnode');
 
 let mnemonic = process.env.MNEMONIC;
@@ -11,7 +8,7 @@ if (typeof mnemonic === 'undefined')
 const loggingEnabled = process.env.LOGGING_ENABLED === 'true';
 
 module.exports = {
-  solidity: "0.7.3",
+  solidity: '0.7.3',
   networks: {
     hardhat: {
       accounts: {
@@ -25,6 +22,5 @@ module.exports = {
     },
   },
   analytics: { enabled: false },
-  dump: process.env.INITIAL_STATE_PATH
 };
 
