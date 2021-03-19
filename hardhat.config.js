@@ -15,11 +15,12 @@ module.exports = {
       accounts: {
         mnemonic,
         path: hdnode.defaultPath,
-        count: 5,
+        count: 8,
         gasPrice: 0,
         gasLimit: 0x1fffffffffffff,
-      }
-    }
+      },
+      loggingEnabled: false,
+    },
   },
   analytics: { enabled: false },
   dump: process.env.INITIAL_STATE_PATH
