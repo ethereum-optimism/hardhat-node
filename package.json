@@ -2,20 +2,16 @@
   "name": "Hardhat-Node",
   "version": "1.0.0",
   "description": "Hardhat node and configuration",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "hardhat test"
+    "start": "hardhat node"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomiclabs/hardhat-hackathon-boilerplate.git"
+    "url": "git+https://github.com/ethereum-optimism/hardhat.git"
   },
   "keywords": [
     "hardhat",
-    "ethereum",
-    "hackathon"
+    "ethereum"
   ],
   "author": "Ethereum Optimism",
   "license": "MIT",
