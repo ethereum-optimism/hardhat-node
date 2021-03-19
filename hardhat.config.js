@@ -8,6 +8,8 @@ let mnemonic = process.env.MNEMONIC;
 if (typeof mnemonic === 'undefined')
   mnemonic = 'abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about';
 
+const loggingEnabled = process.env.LOGGING_ENABLED === 'true';
+
 module.exports = {
   solidity: "0.7.3",
   networks: {
@@ -19,7 +21,7 @@ module.exports = {
         gasPrice: 0,
         gasLimit: 0x1fffffffffffff,
       },
-      loggingEnabled: false,
+      loggingEnabled,
     },
   },
   analytics: { enabled: false },
