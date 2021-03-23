@@ -5,7 +5,9 @@ let mnemonic = process.env.MNEMONIC;
 if (typeof mnemonic === 'undefined')
   mnemonic = 'abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about';
 
-const loggingEnabled = process.env.LOGGING_ENABLED === 'true';
+let hdpath = process.env.HD_PATH;
+if (typeof hdpath === 'undefined')
+  hdpath = hdnode.defaultPath
 
 module.exports = {
   solidity: '0.7.3',
@@ -13,12 +15,11 @@ module.exports = {
     hardhat: {
       accounts: {
         mnemonic,
-        path: hdnode.defaultPath,
+        path: hdpath,
         count: 8,
         gasPrice: 0,
         gasLimit: 0x1fffffffffffff,
       },
-      loggingEnabled,
     },
   },
   analytics: { enabled: false },
