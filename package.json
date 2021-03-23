@@ -2,20 +2,16 @@
   "name": "Hardhat-Node",
   "version": "1.0.0",
   "description": "Hardhat node and configuration",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "hardhat test"
+    "start": "hardhat node"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomiclabs/hardhat-hackathon-boilerplate.git"
+    "url": "git+https://github.com/ethereum-optimism/hardhat.git"
   },
   "keywords": [
     "hardhat",
-    "ethereum",
-    "hackathon"
+    "ethereum"
   ],
   "author": "Ethereum Optimism",
   "license": "MIT",
@@ -23,18 +19,11 @@
     "url": "https://github.com/ethereum-optimism/hardhat/issues"
   },
   "homepage": "https://github.com/ethereum-optimism/hardhat#readme",
-  "devDependencies": {
+  "dependencies": {
+    "@ethersproject/hdnode": "^5.0.5",
     "@nomiclabs/hardhat-ethers": "^2.0.1",
     "@nomiclabs/hardhat-etherscan": "^2.1.0",
-    "@nomiclabs/hardhat-waffle": "^2.0.0",
-    "chai": "^4.2.0",
-    "ethereum-waffle": "^3.1.1",
     "ethers": "^5.0.0",
-    "hardhat": "^2.0.11",
-    "husky": "^4.2.5"
-  },
-  "dependencies": {
-    "@eth-optimism/hardhat-state-dumps": "^0.0.5",
-    "@ethersproject/hdnode": "^5.0.5"
+    "hardhat": "^2.0.11"
   }
 }
